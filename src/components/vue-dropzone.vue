@@ -1,6 +1,9 @@
 <template>
-  <div v-bind:class="{ 'vue-dropzone dropzone': includeStyling }" :id="id" ref="dropzoneElement">
-  </div>
+<div v-bind:class="{ 'vue-dropzone dropzone': includeStyling }" :id="id" ref="dropzoneElement">
+    <slot name="inside">
+
+    </slot>
+</div>
 </template>
 
 <script>
