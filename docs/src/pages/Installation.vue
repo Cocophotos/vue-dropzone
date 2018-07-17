@@ -21,10 +21,10 @@
 <script>
 import editDoc from '../components/DocEditLink.vue';
 var example = `
-<vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions">
+<vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone>
 ....
 import vue2Dropzone from 'vue2-dropzone'
-import 'vue2-dropzone/dist/vue2Dropzone.css'
+import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 
 export default {
   name: 'app',
@@ -40,7 +40,8 @@ export default {
           headers: { "My-Awesome-Header": "header value" }
       }
     }
-  }`
+  }
+}`
 export default {
   data() {
     return {
